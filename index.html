@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow Up Style</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Pantalla Web -->
+    <div class="web-view">
+      <header>
+        <h1>Glow Up Style</h1>
+        <div class="stickers">
+          <span>💅 Manicure</span>
+          <span>💇‍♀️ Corte de cabello</span>
+          <span>🧴 Cuidado de la piel</span>
+        </div>
+        <p>Encuentra a los mejores cosmetólogos/as en Perú.</p>
+      </header>
+      <main>
+        <section class="profiles">
+          <h2>Perfiles de Cosmetólogos/as</h2>
+          <div class="profile-list">
+            <!-- 10 Perfiles Generados -->
+            <div class="profile">
+              <img src="https://via.placeholder.com/150" alt="Foto de María López">
+              <h3>María López</h3>
+              <p><strong>Habilidades:</strong> Manicure, maquillaje profesional</p>
+              <p><strong>Estudios:</strong> Universidad Nacional Mayor de San Marcos</p>
+              <p><strong>Trabajo:</strong> Montalvo Spa</p>
+              <p><strong>Hobbies:</strong> Pintar, yoga</p>
+              <p><strong>Sueños:</strong> Crear su propia línea de cosméticos</p>
+              <p><strong>Contacto:</strong> 987654321</p>
+              <button onclick="matchProfile('María López')">¡Match!</button>
+              <button onclick="sendMessage('María López')">Enviar Mensaje</button>
+            </div>
+            <div class="profile">
+              <img src="https://via.placeholder.com/150" alt="Foto de Juan Pérez">
+              <h3>Juan Pérez</h3>
+              <p><strong>Habilidades:</strong> Barbería, tintes</p>
+              <p><strong>Estudios:</strong> Instituto Superior CEPEA</p>
+              <p><strong>Trabajo:</strong> Salón Glamour</p>
+              <p><strong>Hobbies:</strong> Fotografía, fútbol</p>
+              <p><strong>Sueños:</strong> Abrir su barbería internacional</p>
+              <p><strong>Contacto:</strong> 987123456</p>
+              <button onclick="matchProfile('Juan Pérez')">¡Match!</button>
+              <button onclick="sendMessage('Juan Pérez')">Enviar Mensaje</button>
+            </div>
+            <!-- Añadir más perfiles similares -->
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Pantalla App Móvil -->
+    <div class="mobile-view">
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Glow Up Style - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="map.js"></script>
+</body>
+</html>
